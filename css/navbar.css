@@ -1,0 +1,99 @@
+.navbar{
+    background: #05060687;
+    width: 100%;
+    height: 90px;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top:23px;
+    color: #ededef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    color: #ededef;
+    margin-left: 25px;
+    font-size:16px;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+}
+nav a:hover {
+    color:#40bdec; 
+    cursor: pointer;
+}
+.visualize-button{
+    border: 1px solid #40bdec;
+    padding: 10px;
+    border-radius: 5px;
+}
+.stop-button{
+    border: 1px solid #ec4040;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90px;
+    justify-content: center;
+    display: flex;
+}
+.stop-button:hover{
+    color: #ec4040;
+}
+.disaleButton{
+    pointer-events: none;
+    color:#cbcbcb;
+}
+
+/************** desplegable **************/
+.custom-select {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
+    font-weight:500;
+    width:160px;
+}
+.custom-select select {
+    display: none;
+}
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+.select-items {
+    position: absolute;
+    background-color: #05060687;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 2px;
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/home.css">
+
+<script type="text/javascript" src="js/algorithms/bfs.js"></script>
+<script type="text/javascript" src="js/algorithms/dijkstra.js"></script>
+<script type="text/javascript" src="js/algorithms/astar.js"></script>
+<script type="text/javascript" src="js/algorithms/maze.js"></script>
+
+<div class="navbar"></div>
+<nav id="navAlgorithm">
+    <div class="custom-select">
+        <select id="algorithm-selected">
+            <option value="0">ALGORITHM</option>
+            <option value="bfs">BFS</option>
+            <option value="dijkstra">Dijkstra </option>
+            <option value="a">A*</option>
+        </select>
+    </div>
+    <a href="#" class="visualize-button" id="visualizePath" onclick="visualize()">Visualize</a>
+    <a href="#" id="clear" onclick="clearBoard('all')">Clear</a>
+    <a href="#" id="maze" onclick="generateMaze()">Maze</a>
+</nav>
+<script type="text/javascript" src="js/navbar.js"></script>
+
+<table id="content" onmousemove="onMouseMove(event)">
+
+</table>
+<script type="text/javascript" src="js/home.js"></script>
