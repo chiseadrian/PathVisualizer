@@ -10,7 +10,6 @@ nav{
     color: #ededef;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 nav a{
     font-family: 'Oswald', sans-serif;
